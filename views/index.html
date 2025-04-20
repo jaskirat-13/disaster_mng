@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                
+                SafeGuard
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="task.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1>Stay Prepared, Act Swiftly</h1>
+                    <p>Effortlessly track and respond to disaster-related information with our intuitive platform. 
+                        Say <b>goodbye</b> to chaos and <b>hello</b> to efficient crisis management!
+                    </p>
+
+                    <div class="buttons">
+                        <a href="task.html" class="btn btn-warning demo-button">Get Started</a>
+                        <a href="about.html" class="btn btn-info learn-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../public/11-removebg-preview.png" alt="To-Do List" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart Section -->
+    <section id="features" class="features">
+        <div class="container text-center">
+            <h2>What Sets Us Apart</h2>
+            <p class="section-description">Explore how our platform stands out in disaster management.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>REAL-TIME UPDATES</h2>
+                        <p>Our platform provides timely, accurate data to ensure you're always informed during critical situations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>ADAPTIVE SOLUTIONS</h2>
+                        <p>Effortlessly manage disaster responses with features tailored for tracking, categorizing, and analyzing incidents.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h2>COMMUNITY SUPPORT</h2>
+                        <p>We prioritize collaboration with local authorities and communities, constantly improving our platform to save lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disaster Alert System Section -->
+    
+    <div class="container disaster-alert-system">
+      <h1 class="text-center">Disaster Alert System</h1>
+  
+      <div class="row">
+          <!-- Flood Alert Section -->
+          <div class="col-md-6 mb-4">
+              <div class="alert-section">
+                  <h2>Flood Alert</h2>
+                  <form id="flood-form">
+                      <div class="form-group">
+                          <label for="flood-location">Enter your location for flood alert:</label>
+                          <input type="text" id="flood-location" class="form-control" placeholder="City or Address" required>
+                      </div>
+                      <button type="submit" class="btn btn-success">Check for Water Logging</button>
+                  </form>
+                  <div id="flood-result" class="mt-3"></div>
+              </div>
+          </div>
+  
+          <!-- Earthquake Alert Section -->
+          <div class="col-md-6 mb-4">
+              <div class="alert-section">
+                  <h2>Earthquake Alert</h2>
+                  <form id="earthquake-form">
+                      <div class="form-group">
+                          <label for="earthquake-location">Enter your location for earthquake alert:</label>
+                          <input type="text" id="earthquake-location" class="form-control" placeholder="City or Address" required>
+                      </div>
+                      <button type="submit" class="btn btn-success">Check for Recent Earthquakes</button>
+                  </form>
+                  <div id="earthquake-result" class="mt-3"></div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="row">
+          <!-- Storm Alert Section -->
+          <div class="col-md-6 mb-4">
+              <div class="alert-section">
+                  <h2>Hurricane Alert</h2>
+                  <form id="hurricane-form">
+                      <div class="form-group">
+                          <label for="storm-location">Enter your location for hurricane alert:</label>
+                          <input type="text" id="hurricane" class="form-control" placeholder="City or Address" required>
+                      </div>
+                      <button type="submit" class="btn btn-success">Check for Hurricane</button>
+                  </form>
+                  <div id="hurricane-result" class="mt-3"></div>
+              </div>
+          </div>
+  
+          <!-- Wildfire Alert Section -->
+          <div class="col-md-6 mb-4">
+              <div class="alert-section">
+                  <h2>Drought Alert</h2>
+                  <form id="drought-form">
+                      <div class="form-group">
+                          <label for="drought-location">Enter your location for drought alert:</label>
+                          <input type="text" id="drought-location" class="form-control" placeholder="City or Address" required>
+                      </div>
+                      <button type="submit" class="btn btn-success">Check for drought</button>
+                  </form>
+                  <div id="drought-result" class="mt-3"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+    <!-- Educational Resources Section -->
+  
+  <section class="section__container resources__container">
+    <h2 class="section__header">Educational Resources for Disasters</h2>
+    <div class="resources__grid">
+      <div class="resources__card">
+        <img src="../public/2.jpg" alt="Earthquake Safety" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Earthquake Safety</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="earthquake">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/3.jpg" alt="Flood Preparedness" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Flood Preparedness</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="flood">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/15.jpg" alt="Wildfire Response" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Wildfire Response</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="wildfire">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/17.png" alt="Tsunami Awareness" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Tsunami Awareness</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="tsunami">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/16.jpg" alt="Hurricane Preparedness" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Hurricane Preparedness</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="hurricane">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/7.jpg" alt="Cyclone Safety" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Cyclone Safety</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="cyclone">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/Screenshot 2024-09-17 230945.png" alt="Landslide Safety" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Landslide Safety</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="landslide">Learn More</a>
+        </div>
+      </div>
+      <div class="resources__card">
+        <img src="../public/18.jpg" alt="Water Logging Preparedness" />
+        <div class="resources__content">
+          <div class="resources__card__header">
+            <h4>Water Logging</h4>
+          </div>
+          <a href="#" class="learn__button" data-resource="waterlogging">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup for educational resource details -->
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="educationalPopup">
+    <span class="close" id="closeEducationalPopup">&times;</span>
+    <h2>Educational Resource Details</h2>
+    <p id="educationalDetails"></p>
+  </div>
+
+  
+  <script>
+    const resourceDetails = {
+        earthquake: `
+          <strong>Earthquake Safety</strong><br>
+          - <strong>Before:</strong> Secure heavy furniture and shelves to prevent them from falling. Know the safe spots in your home like under sturdy furniture.<br>
+          - <strong>During:</strong> <strong>Drop, Cover, and Hold On:</strong> Drop to your knees, cover your head and neck, and hold on until the shaking stops.<br>
+          - <strong>After:</strong> Check for injuries, gas leaks, and structural damage. Avoid using elevators and be prepared for aftershocks.<br>
+          <a href="https://www.youtube.com/watch?v=IyVqvTdU4Ic" target="_blank">Watch Earthquake Preparedness Tips</a><br>
+          <a href="https://www.ready.gov/earthquakes" target="_blank">More Earthquake Information</a><br>
+        `,
+        flood: `
+          <strong>Flood Preparedness</strong><br>
+          - <strong>Before:</strong> Know your evacuation routes and move valuable items to higher floors.<br>
+          - <strong>During:</strong> <strong>Evacuation:</strong> Follow evacuation orders and move to higher ground. Avoid walking or driving through floodwaters.<br>
+          - <strong>After:</strong> Avoid returning to flooded areas until authorities declare it safe. Beware of contaminated water and electrical hazards.<br>
+          <a href="https://www.youtube.com/watch?v=EG8kILF-XvY" target="_blank">Watch Flood Safety Tips</a><br>
+          <a href="https://www.ready.gov/floods" target="_blank">More Flood Information</a><br>
+        `,
+        wildfire: `
+          <strong>Wildfire Response</strong><br>
+          - <strong>Before:</strong> Create defensible space around your home and keep emergency supplies ready.<br>
+          - <strong>During:</strong> <strong>Evacuate Early:</strong> Leave your home as soon as evacuation orders are issued. Wear protective clothing to shield yourself from heat and smoke.<br>
+          - <strong>After:</strong> Return home only when authorities say it is safe. Watch for hot spots and ensure your property is safe from flare-ups.<br>
+          <a href="https://www.youtube.com/watch?v=g7kx3s7iht8" target="_blank">Watch Wildfire Evacuation Tips</a><br>
+          <a href="https://www.ready.gov/wildfires" target="_blank">More Wildfire Information</a><br>
+        `,
+        tsunami: `
+          <strong>Tsunami Awareness</strong><br>
+          - <strong>Before:</strong> Know your evacuation routes and practice moving to higher ground.<br>
+          - <strong>During:</strong> <strong>Move to Higher Ground:</strong> Immediately move to higher ground if you feel an earthquake. Stay away from the coastline.<br>
+          - <strong>After:</strong> Do not return to coastal areas until authorities have given the all-clear. Tsunami waves may come in multiple surges.<br>
+          <a href="https://www.youtube.com/watch?v=e6h5Fh29-r4" target="_blank">Watch Tsunami Preparedness Tips</a><br>
+          <a href="https://www.ready.gov/tsunamis" target="_blank">More Tsunami Information</a><br>
+        `,
+        hurricane: `
+          <strong>Hurricane Preparedness</strong><br>
+          - <strong>Before:</strong> Reinforce your home, secure windows, and stock up on supplies.<br>
+          - <strong>During:</strong> <strong>Evacuate if Ordered:</strong> Follow local evacuation orders. Stay away from windows and take shelter in an interior room.<br>
+          - <strong>After:</strong> Avoid flooded areas and downed power lines. Follow local news for information about rescue and recovery efforts.<br>
+          <a href="https://www.youtube.com/watch?v=FOnhM7PCy00" target="_blank">Watch Hurricane Safety Tips</a><br>
+          <a href="https://www.ready.gov/hurricanes" target="_blank">More Hurricane Information</a><br>
+        `,
+        cyclone: `
+          <strong>Cyclone Safety</strong><br>
+          - <strong>Before:</strong> Secure outdoor items and prepare for potential power outages.<br>
+          - <strong>During:</strong> <strong>Secure Your Property:</strong> Protect windows and outdoor items from strong winds.<br>
+          - <strong>After:</strong> Stay indoors until the authorities declare it is safe. Avoid using electrical appliances and beware of damaged power lines.<br>
+          <a href="https://www.youtube.com/watch?v=FOnhM7PCy00" target="_blank">Watch Cyclone Safety Tips</a><br>
+          <a href="https://www.ready.gov/cyclones" target="_blank">More Cyclone Information</a><br>
+        `,
+        landslide: `
+          <strong>Landslide Safety</strong><br>
+          - <strong>Before:</strong> Avoid building homes in areas prone to landslides. Stay alert to heavy rainfall warnings.<br>
+          - <strong>During:</strong> <strong>Evacuate Immediately:</strong> If a landslide is imminent, evacuate your home and move to a safe area.<br>
+          - <strong>After:</strong> Stay away from landslide-prone areas. Look for warning signs of further slides, such as changes in the landscape.<br>
+          <a href="https://www.youtube.com/watch?v=VDGzy4U03uY" target="_blank">Watch Landslide Preparedness Tips</a><br>
+          <a href="https://www.ready.gov/landslides-debris-flow" target="_blank">More Landslide Information</a><br>
+        `,
+        waterlogging: `
+          <strong>Water Logging Preparedness</strong><br>
+          - <strong>Before:</strong> Clear drains and ensure water can flow freely.<br>
+          - <strong>During:</strong> Avoid stepping into deep waterlogged areas and stay indoors.<br>
+          - <strong>After:</strong> Ensure the drains are functioning properly and remove stagnant water to prevent health risks.<br>
+          <a href="https://www.youtube.com/watch?v=m4zWPO-oa2g" target="_blank">Watch Waterlogging Safety Tips</a><br>
+          <a href="https://www.ready.gov/floods" target="_blank">More Waterlogging Information</a><br>
+        `
+      };
+      
+
+  
+    // Function to handle Learn More button clicks
+    document.querySelectorAll('.learn__button').forEach(button => {
+      button.addEventListener('click', event => {
+        event.preventDefault();
+        const resource = event.target.getAttribute('data-resource');
+        document.getElementById('educationalDetails').innerHTML = resourceDetails[resource];
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('educationalPopup').style.display = 'block';
+      });
+    });
+
+    // Function to close the popup
+    document.getElementById('closeEducationalPopup').addEventListener('click', () => {
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('educationalPopup').style.display = 'none';
+    });
+
+    // Close popup if overlay is clicked
+    document.getElementById('overlay').addEventListener('click', () => {
+      document.getElementById('overlay').style.display = 'none';
+      document.getElementById('educationalPopup').style.display = 'none';
+    });
+  </script>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact__container">
+      <div class="container">
+          <h2 class="section__header text-center">Contact Us</h2>
+          <p class="section-description text-center">Have questions or need help? Reach out to us, and we'll get back to you shortly!</p>
+          <div class="row">
+              <div class="col-md-6 contact_form_container">
+                  <form id="contactForm">
+                      <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control interactive-input" id="name" placeholder="Your Name" required>
+</div>
+<div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control interactive-input" id="email" placeholder="Your Email" required>
+</div>
+<div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control interactive-input" id="message" rows="4" placeholder="Your Message" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary btn-block submit-btn">Send Message</button>
+</form>
+</div>
+<div class="col-md-6 contact_details_container">
+<div class="contact__details">
+<h4>Get in touch with us</h4>
+<p><i class="fa fa-envelope"></i> support@safeguard.com</p>
+<p><i class="fa fa-phone"></i> +1-234-567-890</p>
+<p><i class="fa fa-map-marker"></i> 123 Disaster Management Lane, City, Country</p>
+<div class="social-links">
+    <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 SafeGuard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../public/script.js"></script>
+</body>
+
+</html>
